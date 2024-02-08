@@ -421,10 +421,10 @@ const Finance = () => {
     
 
 
-    const handleImageUpload2 = (event) => {
-        const file = event.target.files[0];
-        setSelectedFile(file ? file.name : null);
-      };
+    // const handleImageUpload2 = (event) => {
+    //     const file = event.target.files[0];
+    //     setSelectedFile(file ? file.name : null);
+    //   };
       
 
     const handleCopyClick = () => {
@@ -460,7 +460,6 @@ const Finance = () => {
   </div>
 
   
-{userProfile?.userStatus==="pending" &&(
     <div className="mt-4">
 <div className="flex">
         <button type="button" onClick={() => setModal3(true)} className="btn btn-secondary text-sm">
@@ -504,7 +503,7 @@ const Finance = () => {
                             type="file"
                             id="imageUpload2"
                             className="hidden"
-                            onChange={handleImageUpload2}
+                            // onChange={handleImageUpload2}
                             accept="image/*"
                           />
                         </label>
@@ -546,8 +545,7 @@ const Finance = () => {
         </Dialog>
       </Transition>
     </div>
-)}
-  
+
 </div>
 
 
